@@ -1,0 +1,16 @@
+PODS:
+  - VTToastToolKit (1.0.3)
+
+DEPENDENCIES:
+  - VTToastToolKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - VTToastToolKit
+
+SPEC CHECKSUMS:
+  VTToastToolKit: 87306ba28a511a918203f960f9e89c7d8ef5a9d4
+
+PODFILE CHECKSUM: 9da088c2116bb7b3a95546aec7e0b9d196d745dd
+
+COCOAPODS: 1.5.0
