@@ -11,6 +11,7 @@ import VTToastToolKit
 
 var sdToastView :SDThemeToastView?
 
+//swift协议不支持可选方法，所以要加 @objc ，这样会调用cocoa的运行时 （⚠️：遵循实现该协议的时候，方法前面也要加@objc,用来告诉实现的对象调用oc的运行时，查找对应方法）
 @objc public protocol SDToastViewDelegate{
     @objc optional func leftAction(toastView: SDThemeToastView)
     @objc optional func rightAction(toastView: SDThemeToastView)
@@ -22,11 +23,33 @@ public class SDToastViewTool{
      - parameter frame: 设置大小
      - returns:    Void
      */
-    public class func registerThemeToastView<T:SDToastViewDelegate>(withFrame frame:CGRect, delegate:T? = nil){
+    public class func registerThemeToastView(withFrame frame:CGRect){
         let toastView = SDThemeToastView.sharedInstance()
         toastView.frame = frame
-        toastView.delegate = delegate
         sdToastView = toastView
+    }
+    
+    /**
+     初始化弹窗代理
+     - parameter delegate: toastView的代理
+     - returns:    Void
+     */
+    public class func setToastViewDelegate(delegate:SDToastViewDelegate){
+        guard let sdToastViewCopy = sdToastView else{
+            return
+        }
+        sdToastViewCopy.delegate = delegate
+    }
+    
+    /**
+     设置上下视图的高度
+     - parameter topH: 提示区高度
+     - parameter bottomH: 底部区高度
+     - returns:    Void
+     */
+    public class func layoutTopTipsH(topH:CGFloat,andBottomH bottomH:CGFloat){
+        sdToastView?.topViewH.constant = topH
+        sdToastView?.bottomViewH.constant = bottomH
     }
     
     /**
@@ -37,10 +60,11 @@ public class SDToastViewTool{
      - parameter topTips:  上面提示文字
      - returns:    Void
      */
-    public class func showToastViewWith(centerView :UIView, withLeftTitle left:String, rightTitle right:String, topTips:String){
+    public class func showToastViewWith(target:SDToastViewDelegate, centerView :UIView, LeftTitle left:String, rightTitle right:String, topTips:String){
         if sdToastView == nil {
             sdToastView = SDThemeToastView.sharedInstance()
         }
+        sdToastView?.delegate = target
         sdToastView!.setContentView(customView: centerView, andLeftTitle: left, rightTitle: right, topTips: topTips)
         VTToastTool.showPopupView(withContentView: sdToastView!, andDissmissWithBackgroundTouch: true)
       

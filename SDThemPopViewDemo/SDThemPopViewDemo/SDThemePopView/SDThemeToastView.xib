@@ -47,7 +47,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gbr-o7-f8b">
                     <rect key="frame" x="0.0" y="280" width="568" height="60"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64x-DE-EN1">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64x-DE-EN1">
                             <rect key="frame" x="0.0" y="0.0" width="284" height="60"/>
                             <color key="backgroundColor" red="0.54895764589309692" green="0.54905533790588379" blue="0.54895150661468506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="leftBtn">
@@ -57,9 +57,10 @@
                                 <action selector="lefAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="QBN-su-mD4"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNu-7f-5f9">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNu-7f-5f9">
                             <rect key="frame" x="284" y="0.0" width="284" height="60"/>
                             <color key="backgroundColor" red="0.1476973295211792" green="0.64828091859817505" blue="0.60359859466552734" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                             <state key="normal" title="rightBtn">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>

@@ -47,12 +47,23 @@ public class SDThemeToastView: UIView {
     }
     
     func setContentView(customView :UIView, andLeftTitle left:String, rightTitle right:String, topTips:String){
-        customView.frame = contentView.bounds
+        //⚠️：在给customView设置约束之前需要先把他添加到试图上面去（编译器需要知道custom是在什么图成上面渲染的）
         contentView.addSubview(customView)
-
-        leftBtn.titleLabel?.text = left
-        rightBtn.titleLabel?.text = right
+        setCustomViewFrame(withCustomView: customView)
+        
+        leftBtn.setTitle(left, for: .normal)
+        rightBtn.setTitle(right, for: .normal)
         topTipsLab.text = topTips
+    }
+    
+    func setCustomViewFrame(withCustomView customView:UIView){
+        customView.translatesAutoresizingMaskIntoConstraints = false
+        let layoutAtrTop = NSLayoutConstraint.init(item: customView, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: contentView, attribute: NSLayoutAttribute.top, multiplier: 1, constant: 0)
+        let layoutAtrBottom = NSLayoutConstraint.init(item: customView, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: contentView, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: 0)
+        let layoutAtrLeft = NSLayoutConstraint.init(item: customView, attribute: NSLayoutAttribute.left, relatedBy: NSLayoutRelation.equal, toItem: contentView, attribute: NSLayoutAttribute.left, multiplier: 1, constant: 0)
+        let layoutAtrRight = NSLayoutConstraint.init(item: customView, attribute: NSLayoutAttribute.right, relatedBy: NSLayoutRelation.equal, toItem: contentView, attribute: NSLayoutAttribute.right, multiplier: 1, constant: 0)
+        NSLayoutConstraint.activate([layoutAtrTop,layoutAtrLeft,layoutAtrRight,layoutAtrBottom])
+        
     }
     
     class func sharedInstance() -> SDThemeToastView {

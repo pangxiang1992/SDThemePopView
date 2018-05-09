@@ -14,21 +14,30 @@ class ViewController: UIViewController,SDToastViewDelegate {
         super.viewDidLoad()
         
     }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        SDToastViewTool.registerThemeToastView(withFrame: CGRect.init(x: 0, y: 0, width: 500, height: 350), delegate: self)
+        SDToastViewTool.registerThemeToastView(withFrame: CGRect.init(x: 0, y: 0, width: 800, height: 650))
+        SDToastViewTool.layoutTopTipsH(topH: 60, andBottomH: 60)
         
         let label = UILabel.init()
         label.text = "Hell world"
         label.font = UIFont.systemFont(ofSize: 30)
         label.textColor = UIColor.red
+        label.backgroundColor = UIColor.black
         
-        SDToastViewTool.showToastViewWith(centerView: label, withLeftTitle: "取消", rightTitle: "确定", topTips: "温馨提示")
+        SDToastViewTool.showToastViewWith(target: self, centerView: label, LeftTitle: "取消", rightTitle: "确定", topTips: "温馨提示")
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func leftAction(toastView: SDThemeToastView) {
+        SDToastViewTool.dissMissToastView()
+    }
+    func rightAction(toastView: SDThemeToastView) {
+        SDToastViewTool.dissMissToastView()
+    }
 
 }
 
