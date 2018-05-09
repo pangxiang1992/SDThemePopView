@@ -11,7 +11,7 @@
 		377F4E3B20A2D152002323F0 /* SDThemeToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F4E3820A2D152002323F0 /* SDThemeToastView.swift */; };
 		377F4E3C20A2D152002323F0 /* SDToastViewTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F4E3920A2D152002323F0 /* SDToastViewTool.swift */; };
 		377F4E3D20A2D152002323F0 /* SDThemeToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 377F4E3A20A2D152002323F0 /* SDThemeToastView.xib */; };
-		37BD12472089F5D300F39C47 /* SDThemePopView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37BD123D2089F5D300F39C47 /* SDThemePopView.framework */; };
+		37BD12472089F5D300F39C47 /* SDThemePopViewKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37BD123D2089F5D300F39C47 /* SDThemePopViewKit.framework */; };
 		37BD124C2089F5D300F39C47 /* SDThemePopViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BD124B2089F5D300F39C47 /* SDThemePopViewTests.swift */; };
 		37BD124E2089F5D300F39C47 /* SDThemePopView.h in Headers */ = {isa = PBXBuildFile; fileRef = 37BD12402089F5D300F39C47 /* SDThemePopView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C43127F6970D3C4A592FF893 /* Pods_SDThemePopView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9415A9841443AA1A031A7A69 /* Pods_SDThemePopView.framework */; };
@@ -33,10 +33,10 @@
 		377F4E3820A2D152002323F0 /* SDThemeToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDThemeToastView.swift; sourceTree = "<group>"; };
 		377F4E3920A2D152002323F0 /* SDToastViewTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDToastViewTool.swift; sourceTree = "<group>"; };
 		377F4E3A20A2D152002323F0 /* SDThemeToastView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDThemeToastView.xib; sourceTree = "<group>"; };
-		37BD123D2089F5D300F39C47 /* SDThemePopView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDThemePopView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37BD123D2089F5D300F39C47 /* SDThemePopViewKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDThemePopViewKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37BD12402089F5D300F39C47 /* SDThemePopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDThemePopView.h; sourceTree = "<group>"; };
 		37BD12412089F5D300F39C47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37BD12462089F5D300F39C47 /* SDThemePopViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDThemePopViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37BD12462089F5D300F39C47 /* SDThemePopViewKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDThemePopViewKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37BD124B2089F5D300F39C47 /* SDThemePopViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDThemePopViewTests.swift; sourceTree = "<group>"; };
 		37BD124D2089F5D300F39C47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9415A9841443AA1A031A7A69 /* Pods_SDThemePopView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDThemePopView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37BD12472089F5D300F39C47 /* SDThemePopView.framework in Frameworks */,
+				37BD12472089F5D300F39C47 /* SDThemePopViewKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,8 +87,8 @@
 		37BD123E2089F5D300F39C47 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				37BD123D2089F5D300F39C47 /* SDThemePopView.framework */,
-				37BD12462089F5D300F39C47 /* SDThemePopViewTests.xctest */,
+				37BD123D2089F5D300F39C47 /* SDThemePopViewKit.framework */,
+				37BD12462089F5D300F39C47 /* SDThemePopViewKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,9 +137,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		37BD123C2089F5D300F39C47 /* SDThemePopView */ = {
+		37BD123C2089F5D300F39C47 /* SDThemePopViewKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37BD12512089F5D300F39C47 /* Build configuration list for PBXNativeTarget "SDThemePopView" */;
+			buildConfigurationList = 37BD12512089F5D300F39C47 /* Build configuration list for PBXNativeTarget "SDThemePopViewKit" */;
 			buildPhases = (
 				12E5DD09FFC49C090699A9FD /* [CP] Check Pods Manifest.lock */,
 				37BD12382089F5D300F39C47 /* Sources */,
@@ -151,14 +151,14 @@
 			);
 			dependencies = (
 			);
-			name = SDThemePopView;
+			name = SDThemePopViewKit;
 			productName = SDThemePopView;
-			productReference = 37BD123D2089F5D300F39C47 /* SDThemePopView.framework */;
+			productReference = 37BD123D2089F5D300F39C47 /* SDThemePopViewKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		37BD12452089F5D300F39C47 /* SDThemePopViewTests */ = {
+		37BD12452089F5D300F39C47 /* SDThemePopViewKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37BD12542089F5D300F39C47 /* Build configuration list for PBXNativeTarget "SDThemePopViewTests" */;
+			buildConfigurationList = 37BD12542089F5D300F39C47 /* Build configuration list for PBXNativeTarget "SDThemePopViewKitTests" */;
 			buildPhases = (
 				37BD12422089F5D300F39C47 /* Sources */,
 				37BD12432089F5D300F39C47 /* Frameworks */,
@@ -169,9 +169,9 @@
 			dependencies = (
 				37BD12492089F5D300F39C47 /* PBXTargetDependency */,
 			);
-			name = SDThemePopViewTests;
+			name = SDThemePopViewKitTests;
 			productName = SDThemePopViewTests;
-			productReference = 37BD12462089F5D300F39C47 /* SDThemePopViewTests.xctest */;
+			productReference = 37BD12462089F5D300F39C47 /* SDThemePopViewKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -193,7 +193,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 37BD12372089F5D200F39C47 /* Build configuration list for PBXProject "SDThemePopView" */;
+			buildConfigurationList = 37BD12372089F5D200F39C47 /* Build configuration list for PBXProject "SDThemePopViewKit" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -205,8 +205,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				37BD123C2089F5D300F39C47 /* SDThemePopView */,
-				37BD12452089F5D300F39C47 /* SDThemePopViewTests */,
+				37BD123C2089F5D300F39C47 /* SDThemePopViewKit */,
+				37BD12452089F5D300F39C47 /* SDThemePopViewKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -273,7 +273,7 @@
 /* Begin PBXTargetDependency section */
 		37BD12492089F5D300F39C47 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 37BD123C2089F5D300F39C47 /* SDThemePopView */;
+			target = 37BD123C2089F5D300F39C47 /* SDThemePopViewKit */;
 			targetProxy = 37BD12482089F5D300F39C47 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -495,7 +495,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		37BD12372089F5D200F39C47 /* Build configuration list for PBXProject "SDThemePopView" */ = {
+		37BD12372089F5D200F39C47 /* Build configuration list for PBXProject "SDThemePopViewKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37BD124F2089F5D300F39C47 /* Debug */,
@@ -504,7 +504,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37BD12512089F5D300F39C47 /* Build configuration list for PBXNativeTarget "SDThemePopView" */ = {
+		37BD12512089F5D300F39C47 /* Build configuration list for PBXNativeTarget "SDThemePopViewKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37BD12522089F5D300F39C47 /* Debug */,
@@ -513,7 +513,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37BD12542089F5D300F39C47 /* Build configuration list for PBXNativeTarget "SDThemePopViewTests" */ = {
+		37BD12542089F5D300F39C47 /* Build configuration list for PBXNativeTarget "SDThemePopViewKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37BD12552089F5D300F39C47 /* Debug */,

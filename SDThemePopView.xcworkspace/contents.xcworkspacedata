@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SDThemePopView.xcodeproj">
+      location = "group:/Users/pangxiang/Desktop/&#x7ec4;&#x4ef6;&#x5316;/&#x4e0a;&#x6d77;&#x95ea;&#x5e97;&#x8054;&#x79d1;&#x6280;&#x6709;&#x9650;&#x516c;&#x53f8;/SDThemePopView/SDThemePopViewKit.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
