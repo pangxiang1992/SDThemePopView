@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		377F4E3320A2CA4B002323F0 /* SDThemeToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 377F4E3020A2CA4B002323F0 /* SDThemeToastView.xib */; };
-		377F4E3420A2CA4B002323F0 /* SDToastViewTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F4E3120A2CA4B002323F0 /* SDToastViewTool.swift */; };
-		377F4E3520A2CA4B002323F0 /* SDThemeToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F4E3220A2CA4B002323F0 /* SDThemeToastView.swift */; };
 		377F4E3720A2CC47002323F0 /* VTToastToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377F4E3620A2CC47002323F0 /* VTToastToolKit.framework */; };
+		377F4E3B20A2D152002323F0 /* SDThemeToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F4E3820A2D152002323F0 /* SDThemeToastView.swift */; };
+		377F4E3C20A2D152002323F0 /* SDToastViewTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F4E3920A2D152002323F0 /* SDToastViewTool.swift */; };
+		377F4E3D20A2D152002323F0 /* SDThemeToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 377F4E3A20A2D152002323F0 /* SDThemeToastView.xib */; };
 		37BD12472089F5D300F39C47 /* SDThemePopView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37BD123D2089F5D300F39C47 /* SDThemePopView.framework */; };
 		37BD124C2089F5D300F39C47 /* SDThemePopViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BD124B2089F5D300F39C47 /* SDThemePopViewTests.swift */; };
 		37BD124E2089F5D300F39C47 /* SDThemePopView.h in Headers */ = {isa = PBXBuildFile; fileRef = 37BD12402089F5D300F39C47 /* SDThemePopView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,10 +29,10 @@
 
 /* Begin PBXFileReference section */
 		292E9FB8CAB4A3B76C7C850A /* Pods-SDThemePopView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDThemePopView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDThemePopView/Pods-SDThemePopView.debug.xcconfig"; sourceTree = "<group>"; };
-		377F4E3020A2CA4B002323F0 /* SDThemeToastView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDThemeToastView.xib; sourceTree = "<group>"; };
-		377F4E3120A2CA4B002323F0 /* SDToastViewTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDToastViewTool.swift; sourceTree = "<group>"; };
-		377F4E3220A2CA4B002323F0 /* SDThemeToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDThemeToastView.swift; sourceTree = "<group>"; };
 		377F4E3620A2CC47002323F0 /* VTToastToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VTToastToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		377F4E3820A2D152002323F0 /* SDThemeToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDThemeToastView.swift; sourceTree = "<group>"; };
+		377F4E3920A2D152002323F0 /* SDToastViewTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDToastViewTool.swift; sourceTree = "<group>"; };
+		377F4E3A20A2D152002323F0 /* SDThemeToastView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDThemeToastView.xib; sourceTree = "<group>"; };
 		37BD123D2089F5D300F39C47 /* SDThemePopView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDThemePopView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37BD12402089F5D300F39C47 /* SDThemePopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDThemePopView.h; sourceTree = "<group>"; };
 		37BD12412089F5D300F39C47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,16 +73,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		377F4E2F20A2CA4B002323F0 /* SDThemePopView */ = {
-			isa = PBXGroup;
-			children = (
-				377F4E3020A2CA4B002323F0 /* SDThemeToastView.xib */,
-				377F4E3120A2CA4B002323F0 /* SDToastViewTool.swift */,
-				377F4E3220A2CA4B002323F0 /* SDThemeToastView.swift */,
-			);
-			path = SDThemePopView;
-			sourceTree = "<group>";
-		};
 		37BD12332089F5D200F39C47 = {
 			isa = PBXGroup;
 			children = (
@@ -106,7 +96,9 @@
 		37BD123F2089F5D300F39C47 /* SDThemePopView */ = {
 			isa = PBXGroup;
 			children = (
-				377F4E2F20A2CA4B002323F0 /* SDThemePopView */,
+				377F4E3820A2D152002323F0 /* SDThemeToastView.swift */,
+				377F4E3A20A2D152002323F0 /* SDThemeToastView.xib */,
+				377F4E3920A2D152002323F0 /* SDToastViewTool.swift */,
 				37BD12402089F5D300F39C47 /* SDThemePopView.h */,
 				37BD12412089F5D300F39C47 /* Info.plist */,
 			);
@@ -194,6 +186,7 @@
 				TargetAttributes = {
 					37BD123C2089F5D300F39C47 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					37BD12452089F5D300F39C47 = {
 						CreatedOnToolsVersion = 9.3;
@@ -223,7 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				377F4E3320A2CA4B002323F0 /* SDThemeToastView.xib in Resources */,
+				377F4E3D20A2D152002323F0 /* SDThemeToastView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +255,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				377F4E3420A2CA4B002323F0 /* SDToastViewTool.swift in Sources */,
-				377F4E3520A2CA4B002323F0 /* SDThemeToastView.swift in Sources */,
+				377F4E3B20A2D152002323F0 /* SDThemeToastView.swift in Sources */,
+				377F4E3C20A2D152002323F0 /* SDToastViewTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +403,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 292E9FB8CAB4A3B76C7C850A /* Pods-SDThemePopView.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -427,6 +421,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.ishandian.app.SDThemePopView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -436,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB36EF62D1BF2B07C8821E17 /* Pods-SDThemePopView.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
