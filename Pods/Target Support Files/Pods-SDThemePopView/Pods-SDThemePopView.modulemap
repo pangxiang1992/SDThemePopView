@@ -1,0 +1,6 @@
+framework module Pods_SDThemePopView {
+  umbrella header "Pods-SDThemePopView-umbrella.h"
+
+  export *
+  module * { export * }
+}
